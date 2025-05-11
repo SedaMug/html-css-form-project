@@ -1,0 +1,133 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<body>
+  <head>
+    <meta="utf-8">
+    <title>Seda's Survey Form</title>
+    <link rel="stylesheet" href="styles.css">    
+  </head>
+    <h1 id="title">Seda's English Learning Form</h1>
+    <p id="description">Thanks a lot for helping the website!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your First Name:
+          <input id="name" name="first-name" type="text" placeholder="My name is..." required/>
+        </label>
+        <label for="email" id="email-label">Enter Your Email:
+           <input id="email" name="email" type="email" placeholder="My email is..." required/>
+        </label>
+        <label for="number" id="number-label">Enter Your Age:
+         <input id="number" name="age" type="number" min="6" max="96" placeholder="My age is..." required/>  
+        </label>
+        </fieldset>
+        <fieldset>
+        <label for="dropdown" >
+         Why do you want to learn english with me?  <select id="dropdown" name="current-job">
+             <option>Select an option</option>
+             <option>Because I heard good things about your lessons</option>
+             <option>I think it would be fine</option>
+             <option>Don't understand</option>
+             <option>Don't know yet</option>
+             </select>
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>Will you recommend me to a friends?</legend>
+          <label for="answer-1">
+            <input id="answer-1" type="radio" name="recommendation" class="inline" value="Yes,I will!)" checked></input>Yes,I will!)
+          </label>
+          <label for="answer-2">
+            <input id="answer-2" type="radio" name="recommendation" class="inline" value="No,unfortunately:(" ></input>No,unfortunately:(
+          </label>
+        </fieldset>
+      <fieldset>
+      <label for="questions">
+         What's Your English Level:<input id="questions" type="checkbox" name="A1" class="inline" value="yes" >A1</input>
+        <input id="questions" type="checkbox" name="A2" class="inline" value="yes" >A2</input>
+        <input id="questions" type="checkbox" name="A2+"  class="inline" value="yes" >A2+</input>
+        <input id="questions" type="checkbox" name="B1" class="inline"  value="yes" >B1</input>
+        <input id="questions" type="checkbox" name="B2"  class="inline" value="yes" >B2</input>
+        <input id="questions" type="checkbox" name="B2+" class="inline" value="yes" >B2+</input>
+     </label>
+     </fieldset>
+      <label for="telling-about-goal">
+        <textarea id="telling-about-goal" name="telling-about-goal" rows="4" cols="35" placeholder="I want to learn english because..."></textarea>
+      </label>
+      <input id="submit" type="submit" value="Send Form"></input>
+    </form>  
+</body>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #f1948a;
+  font-family:impact;
+  font-size:19px;
+  background-image:https://i.pinimg.com/736x/25/06/38/25063895d7e23859dbd525266d464851.jpg;
+  }
+
+h1,p{
+    margin:1em auto;
+    text-align:center;
+  }
+  
+form {
+    width:60vw;
+    max-width:500px;
+    min-width:300px;
+    margin:0 auto;
+    padding-bottom:2em;
+  }
+
+fieldset {
+border:none;
+padding:2rem 0;
+border-bottom:3px solid #EA785B;
+  }
+
+  input,textarea,select{
+    margin:10px 0 0 0;
+    width:100%;
+    min-height:1.5em;
+  }
+
+  label {
+  display: block;
+  margin: 0.7rem 0;
+}
+
+
+  input,textarea{
+    background-color:#f5b7b1;
+    border:0.5px solid #f5b7b1;
+    color:#17202a;
+  }
+
+  .inline{
+    width:unset;
+    margin:0 0.5em 0 0;
+    vertical-align:middle;
+  }
+
+
+
+input[type="submit"]{
+  display:block;
+  width:60%;
+  margin:1em auto;
+  height:1.5em;
+  font-size:1.1rem;
+  background-color:#EA785B;
+  border-color:white;
+  min-width:250px;
+}
+
+
+** end of styles.css **
+
